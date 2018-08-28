@@ -16,6 +16,144 @@ produces:
 consumes:
 - application/json
 paths:
+  /GetEventsForMonth:
+    get:
+      summary: Get Events For Month
+      description: Get events for the specified date.
+      operationId: postGeteventsformonth
+      x-api-path-slug: geteventsformonth-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Market Data
+      - Events
+      - Month
+  /GetHistoricalMonthlyCrossRatesRange:
+    get:
+      summary: Get Historical Monthly Cross Rates Range
+      description: This operation returns a complete range of stock quotes for a currency
+        pair.
+      operationId: postGethistoricalmonthlycrossratesrange
+      x-api-path-slug: gethistoricalmonthlycrossratesrange-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Market Data
+      - Historical
+      - Monthly
+      - Cross
+      - Rates
+      - Range
+  /GetHistoricalCommodityMonthlyRange:
+    get:
+      summary: Get Historical Commodity Monthly Range
+      description: Returns a range of historical quotes for a future contract.
+      operationId: postGethistoricalcommoditymonthlyrange
+      x-api-path-slug: gethistoricalcommoditymonthlyrange-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Market Data
+      - Historical
+      - Commodity
+      - Monthly
+      - Range
+  /GetHistoricalSpotMonthlyRange:
+    get:
+      summary: Get Historical Spot Monthly Range
+      description: Returns a range of commodity spot prices for a commodity.
+      operationId: postGethistoricalspotmonthlyrange
+      x-api-path-slug: gethistoricalspotmonthlyrange-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Market Data
+      - Historical
+      - Spot
+      - Monthly
+      - Range
+  /ListFrontMonthContracts:
+    get:
+      summary: List Front Month Contracts
+      description: List all commodity future Front Month Contracts.
+      operationId: postListfrontmonthcontracts
+      x-api-path-slug: listfrontmonthcontracts-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Market Data
+      - List
+      - Front
+      - Month
+      - Contracts
+  /GetFrontMonthFuture:
+    get:
+      summary: Get Front Month Future
+      description: Returns master data on the front month future contract
+      operationId: GetFrontMonthFuture
+      x-api-path-slug: getfrontmonthfuture-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Front
+      - Month
+      - Future
+  /GetLatestFrontMonthFutureQuotes:
+    get:
+      summary: Get Latest Front Month Future Quotes
+      description: Returns latest quotes for front month futures
+      operationId: GetLatestFrontMonthFutureQuotes
+      x-api-path-slug: getlatestfrontmonthfuturequotes-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Latest
+      - Front
+      - Month
+      - Future
+      - Quotes
   /GetGlobalHistoricalMonthlyQuotesRange:
     get:
       summary: Get Global Historical Monthly Quotes Range

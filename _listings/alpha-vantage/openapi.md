@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Alpha Vantage
 x-complete: 1
@@ -43,4 +42,3 @@ paths:
       - Digital Currencies
       - Monthly
       - Time Series
----

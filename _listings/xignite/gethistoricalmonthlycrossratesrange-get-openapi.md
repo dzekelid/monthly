@@ -16,6 +16,24 @@ produces:
 consumes:
 - application/json
 paths:
+  /GetEventsForMonth:
+    get:
+      summary: Get Events For Month
+      description: Get events for the specified date.
+      operationId: postGeteventsformonth
+      x-api-path-slug: geteventsformonth-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Market Data
+      - Events
+      - Month
   /GetHistoricalMonthlyCrossRatesRange:
     get:
       summary: Get Historical Monthly Cross Rates Range

@@ -7,13 +7,13 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgr
 x-kinRank: "9"
 x-alexaRank: "10000"
 tags: Monthly
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/monthly/master/_listings/sendgrid/apis.md
 specificationVersion: "0.14"
 apis:
-- name: SendGrid Get Subusers Stats Monthly
-  x-api-slug: sendgrid
+- name: SendGrid - Get Subusers Stats Monthly
+  x-api-slug: subusersstatsmonthly-get
   description: |-
     **This endpoint allows you to retrieve the monthly email statistics for all subusers over the given date range.**
 
@@ -25,15 +25,16 @@ apis:
     For more information, see our [User Guide](https://sendgrid.com/docs/User_Guide/Statistics/subuser.html).
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
   humanURL: http://sendgrid.com
-  baseURL: https://api.sendgrid.com//v3//subusers/stats/monthly
-  tags: Email,Subusers, Stats, Monthly
+  baseURL: https://api.sendgrid.com//v3
+  tags: API LIfeyclessss, Imports, Stack Network, Stack, Technology, SaaS, Emails,
+    Emails, Messages, Messages, Relative Data, Service API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/monthly/master/_listings/sendgrid/subusersstatsmonthly-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/monthly/master/_listings/sendgrid/subusersstatsmonthly-get-openapi.md
-- name: SendGrid Get Subusers Subuser Name Stats Monthly
-  x-api-slug: sendgrid
+- name: SendGrid - Get Subusers Subuser Name Stats Monthly
+  x-api-slug: subuserssubuser-namestatsmonthly-get
   description: |-
     **This endpoint allows you to retrive the monthly email statistics for a specific subuser.**
 
@@ -45,29 +46,21 @@ apis:
     For more information, see our [User Guide](https://sendgrid.com/docs/User_Guide/Statistics/subuser.html).
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
   humanURL: http://sendgrid.com
-  baseURL: https://api.sendgrid.com//v3//subusers/{subuser_name}/stats/monthly
-  tags: Email,Subusers, Subuser, Name, Stats, Monthly
+  baseURL: https://api.sendgrid.com//v3
+  tags: API LIfeyclessss, Imports, Stack Network, Stack, Technology, SaaS, Emails,
+    Emails, Messages, Messages, Relative Data, Service API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/monthly/master/_listings/sendgrid/subuserssubuser-namestatsmonthly-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/monthly/master/_listings/sendgrid/subuserssubuser-namestatsmonthly-get-openapi.md
-- name: SendGrid
-  x-api-slug: sendgrid
-  description: SendGrids cloud-based email infrastructure relieves businesses of the
-    cost and complexity of maintaining custom email systems. SendGrid provides reliable
-    delivery, scalability and real-time analytics along with flexible APIs that make
-    custom integration a breeze.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/142-sendgrid.jpg
-  humanURL: http://sendgrid.com
-  baseURL: https://api.sendgrid.com//v3
-  tags: Monthly
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/monthly/master/_listings/sendgrid/openapi.md
 x-common:
 - type: x--net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html
+- type: x-api-gallery
+  url: http://school.digger.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://sendgrid.stack.network
 - type: x-base
   url: https://api.sendgrid.com
 - type: x-blog
